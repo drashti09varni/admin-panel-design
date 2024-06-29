@@ -10,7 +10,7 @@ const Login = ({ setIsLoggedIn }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulated authentication logic
-    if (credentials.username === 'admin' && credentials.password === 'admin1234') {
+    if (credentials.username === 'admin' && credentials.password === 'admin123') {
       setIsLoggedIn(true);
       localStorage.setItem('isLoggedIn', 'true'); // Store authentication state in localStorage
       navigate('/dashboard'); // Redirect to dashboard after successful login
